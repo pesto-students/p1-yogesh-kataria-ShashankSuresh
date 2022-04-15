@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top:35vh;
+    height:200px;
+    width:200px;
+}
+
+.child{
+    position: absolute;
+    height: 100px;
+    width:100px;
+    transition: 0.7s ease;
+}
+
+.item-1{
+    top:0;
+    left:0;
+    background-color: red;
+}
+
+.item-2{
+    top:0;
+    right:0;
+    background-color: yellow;
+}
+
+.item-3{
+    bottom:0;
+    left:0;
+    background-color: blue;
+}
+
+.item-4{
+    bottom:0;
+    right:0;
+    background-color: green;
+}
+
+.container:hover{
+    cursor:pointer;
+}
+
+.container:hover >.item-1{
+    transform: translate(-100%, 0%) rotate(90deg) ;
+}
+.container:hover > .item-2{
+    transform: translate(100%, 0%) rotate(-90deg) ;
+}
+.container:hover > .item-3{
+    transform: translate(-100%, 0%) rotate(-90deg) ;
+}
+.container:hover > .item-4{
+    transform: translate(100%, 0%) rotate(90deg) ;
+}
