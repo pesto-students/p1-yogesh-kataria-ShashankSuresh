@@ -3,7 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
-
+:root{
+    --colorred:red;
+}
 .container{
     position:relative;
     display: flex;
@@ -25,7 +27,7 @@
 .item-1{
     top:0;
     left:0;
-    background-color: red;
+    background-color: var(--colorred);
 }
 
 .item-2{

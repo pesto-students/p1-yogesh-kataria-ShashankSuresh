@@ -29,3 +29,30 @@ console.log(stack.items); // => undefined
 stack.items = [10, 100, 1000];
 console.log(stack.items); // [10, 100, 1000]
 console.log(stack.print()); //items : [10] not [10, 100, 1000]
+
+
+
+/* In another way you can do this 
+
+Basically, I am doing  when "createStack" function execute push, pop functions so these functions make lexical env or scope and creates a closure so, outside of "createStack" function cannot access "items" variable, only you can access inside the function.
+
+*/
+const createStack = () => {
+    const items = [];
+    return {
+        push(item) {
+            items.push(item);
+        },
+        pop() {
+            const popItem = items.pop();
+            console.log(popItem);
+        },
+    };
+};
+
+const stack = createStack();
+
+stack.push(10);
+stack.push(5);
+stack.pop(); //5
+console.log(stack.items); // undefined
