@@ -1,0 +1,104 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2.5% 97.5%;
+    grid-template-rows: 100%;
+}
+
+.v-nav {
+    background-color: #F0F0F0;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 6rem;
+}
+
+.info {
+    display: grid;
+    background-color: #454545;
+    grid-template-columns: 15% 85%;
+    
+}
+
+img {
+    width: 85%;
+    padding: 20px;
+}
+
+.info-album {
+
+    color: #ffff;
+}
+
+.album-para {
+    line-height: 0.3rem;
+    padding-bottom: 6.5rem;
+}
+
+.icon-list {
+    padding-right: 30px;
+    color: #ffff;
+}
+
+/* INFO TABLE */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0px 190px;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+.table-link {
+    background-color: white;
+    box-shadow: 2px 1px 2px #888888;
+    text-decoration: none;
+
+    color: #8E8CEA;
+    padding: 2px 1px;
+}
+
+.footer{
+    background-color: #43689B;
+    color: #ffff;
+    display: grid;
+    grid-template-columns: 6% 44% 50%;
+    grid-template-rows: 100%;
+}
+
+.f-img {
+    width: 80px;
+    padding: 8px 0px 5px 8px;
+}
+
+.footer-song {
+    line-height: 0.8rem;
+    text-align: left;
+    padding-top: 4px;
+}
+
+.footer-symbol {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.f-list {
+    padding-right: 180px;
+
+}
